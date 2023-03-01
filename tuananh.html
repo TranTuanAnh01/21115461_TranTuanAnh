@@ -6,6 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TranTuanAnh_21115461</title>
    <style>
+    .bai17{
+        box-shadow: 10px 10px 10px silver, 10px 10px 10px silver;
+        margin: 20%;
+        border: 2px solid silver;
+background-color: goldenrod;
+    }
+    .bai16{
+        box-shadow: 10px 10px 10px silver, 10px 10px 10px silver;
+        margin: 15%;
+        background-color: white;
+        border: 2px solid silver;
+    }
     * {
             margin: 0;
             padding: 0;
@@ -198,6 +210,7 @@
     color: black;
     margin: 15%;
     box-shadow:20px 20px 10px gray, 10px 10px 10px silver;
+    text-align: left;
 }
 .bai5a{
     background-color: silver;
@@ -930,29 +943,28 @@
     </form>
 </div></div>
 <h1>Bài 15</h1>
-<div> <div class="bai15" style="box-shadow: 20px 20px 10px silver, 20px 20px 10px silver">
-    <div class="header">
-        <h1>Contact Us</h1>
-    </div>
+
+
     <div>
         <fieldset>
-            <legend>Your email</legend>
+            <legend><i>Contact Information</i></legend>
             <table>
                 <tr>
-                    <td><label for="emailTo">To</label></td>
-                    <td><input type="text" name="txtTo" readonly="readonly" id="emailTo"
-                        size="20" value="Example Cafe"></td>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" name="txtFirst" id="emailTo"
+                        size="20"></td>
                 </tr>
 
                 <tr>
-                    <td><label for="emailFrom">Your email</label></td>
-                    <td><input type="text" name="txtFrom" id="emailFrom" size="20" 
+                    <td><label>Last Name</label></td>
+                    <td><input type="text" name="txtLast" id="emailFrom" size="20" 
                         tabindex="1" maxlength="250"></td>
                 </tr>
 
                 <tr>
-                    <td><label for="emailBody">Message</label></td>
-                    <td><textarea name="txtBody" id="emailBody" cols="50" rows="10" tabindex="2"></textarea></td>
+                    <td><label>E-mail</label></td>
+                    <td><input type="text" name="txtE" id="emailE" size="20" 
+                        tabindex="1" maxlength="250"></td>
                 </tr>
             </table>
         </fieldset>
@@ -960,28 +972,208 @@
 
     <div>
         <fieldset>
-            <legend>How you found us</legend>
-            <tr>
-                <td><label for="">How did you hear of us</label></td>
-                <td>
-                    <select name="web" class="web" style="width: 100px;">
-                        <option value="google">Google</option>
-                        <option value="face">Facebook</option>
-                        <option value="git">Github</option>
-                    </select><br>
-                </td>
-            </tr>
-
-            <tr>
-                <td><label>Newsletter</label></td>
-                <td>
-                    <input type="checkbox">
-                    <label for="">Ensure this box is checked if you would like to receive email updates</label>
-                </td>
-            </tr>
+            <legend><i>Competition Question</i></legend>
+            <p>How tall is the Eiffel Tower in Paris, France</p>
+            <p>
+                <input type="radio" name="">584ft
+            </p>
+            <p>
+                <input type="radio" name="">784ft
+            </p>
+            <p>
+                <input type="radio" name="">984ft
+            </p>
+            <p>
+                <input type="radio" name="">1184ft
+            </p>
         </fieldset>
     </div>
-</div></div>
+
+    <div>
+        <fieldset>
+            <legend><i>Tiebreaker Question</i></legend>
+            <p>In 25 words or less, say why you would like to win $10,000:</p>
+            <td><textarea cols="50" rows="10" tabindex="2"></textarea></td>
+        </fieldset>
+    </div>
+
+    <div>
+        <fieldset>
+            <legend><i>Enter competition</i></legend>
+            <input type="submit" name="" value="Enter Competition">
+        </fieldset>
+    </div>
+</div>
+
+</div>
+<h1><em>Bài 16</em></h1>
+<div class="bai16">
+  
+    <form class="content">
+        <h1>Travel reservation form</h1>
+        <p><b>* denotes mandotory</b></p>
+        <div>Full name*:</div>
+        <input type="text" id="firstlast_name" placeholder="FirstName LastName">
+        <div>Email address*:</div>
+        <input type="text" id="mail_address" placeholder="EMAIL_ADDRESS">
+        <div>Select Tour Package*:</div>
+        <select name="web" class="web" style="width: 100px;">
+            <option value="google">Gooa</option>
+            <option value="face">Face</option>
+            <option value="git">Gith</option>
+        </select><br>
+        <div>Arrival date*:</div>
+        <input type="text" name="date" id="date" placeholder="m/d/y">
+        <div>Number of persons*:</div>
+        <input type="number" name="number" id="phone" placeholder="UNKNOWN_TYPE">
+        <div>What would you want to avail?*</div>
+        <div>
+            Boarding<input type="checkbox" name="">
+        </div>
+        <div>
+            Fooding<input type="checkbox" name="">
+        </div>
+        <div>
+            Sight seeing<input type="checkbox" name="">
+        </div>
+        <div>Discout Coupon code:</div>
+        <input type="number" name="number" id="phone" placeholder="UNKNOWN_TYPE">
+        <div>Terms and conditions*</div>
+        <div>
+            <input type="radio" name="ok" id="ok"> I agree
+            <input type="radio" name="nook" id="nook"> I disagree
+        </div>
+        <input type="submit" value="Complete reservation">
+    </form>
+</div>
+<h1><em>bài 17</em></h1>
+<div class="bai17">
+   
+    <div class="content1">
+        <h2 style="text-align: center;">Survey form</h2>
+        <p>
+            Queenston does not only represent sellers. We have contracted with buyers to put sellers in front of
+            them. If the buyer has a unique proposition they can be successful in finding businesses. Some sellers
+            do not want to hire a third party to market their businesses for many reasons. This creates opportunities
+            for the right buyer. In addition, Queenston is usually able to negotiate a better price and more
+            favourable terms for the buyer. 
+        </p>
+        <p>
+            1. What is your name?
+        </p>
+        <input type="text" name="txtName" id="name" size="30">
+        <p>
+            2. What is your date of birth?
+        </p>
+        <div>
+            Month: 
+            <select name="web" class="web" style="width: 100px;">
+                  <option value="">January</option>
+                  <option value="">February</option>
+                  <option value="">March</option>
+                  <option value="">April</option>
+                  <option value="">May</option>
+                  <option value="">June</option>
+                  <option value="">July</option>
+                  <option value="">August</option>
+                  <option value="">September</option>
+                  <option value="">October</option>
+                  <option value="">November</option>
+                  <option value="">December</option>     
+            </select>
+            Date:
+            <input type="text" name="txtDate" id="date" size="2">
+            Year:
+            <input type="text" name="txtDate" id="date" size="2">
+        </div>
+        <p>
+            3. What is your mailing address (if you would like to have a hard copy of our catalog sent to you)?
+        </p>
+        <form action="">
+            <textarea name="list" rows="4" cols="50">Number/P.O. Box/Route:  Street/Avenue/Road: City: State/Zip: 
+        
+            </textarea>
+        </form>
+        <p>
+            4. What is your email address?
+        </p>
+        <input type="text" name="txtName" id="name" size="20">
+        <p>
+            5. Have you viewed our online product catalog?
+        </p>
+        <input type="radio" name="raYes" id="yes">Yes
+        <input type="radio" name="raNo" id="no">No
+        <p>
+            6. If so, what product(s), besides the one you are ordering, might you be interested in purchasing in the future? (Check all that apply.)
+        </p>
+        <div>
+            <input type="checkbox" name="" id="">VCR
+        </div>
+        <div>
+            <input type="checkbox" name="" id="">Big Screen TV
+        </div>
+        <div>
+            <input type="checkbox" name="" id="">Audio Equipment
+        </div>           
+        <div>
+            <input type="checkbox" name="" id="">Video Equipment
+        </div>       
+        <div>
+            <input type="checkbox" name="" id="">Camera Equipment
+        </div>      
+        <div>
+            <input type="checkbox" name="" id="">Other
+            <input type="text" name="" id="" placeholder="Please List:">
+        </div>       
+        <p>
+            7. Do you have any questions, comments or suggestions before proceeding to the Order Form?
+        </p>
+        <textarea name="list" rows="4" cols="50">Your input:
+        </textarea>
+        <br><br>
+        <div class="submit-frm" style="text-align: center;">
+            <input type="submit" value="Send Form" style="margin-right: 15px;">
+            <input type="submit" value="Clear Form" style="margin-left: 15px;">
+        </div>
+    </div>
+
+</div>
+<div class="bai18">
+    <p>Bài 18</p>
+    <div class="content">
+        <form action="" method="get" name="frmInfo">
+            Please indicate your area  of interest: <br>
+            <input type="text" name="txtName" id="tech" size="20" maxlength="20" list="tech" value="">
+            <datalist id="tech">
+                <option value="CSS">
+                <option value="HTML">
+                <option value="Javascript">
+            </datalist>
+        </form>
+    </div>
+</div>
+
+<br><hr><hr>
+
+<div class="bai19">
+    <p>Bài 19</p>
+    <div class="content">
+        <h2>Video</h2>
+        <video controls>
+            <source src="https://www.w3schools.com/tags/movie.mp4" type="video/mp4">
+        </video>
+    </div>
+</div>
+
+<br><hr><hr>
+
+<div class="bai20">
+    <p>Bài 20</p>
+    <div class="content">   
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/UMGpMeA6sxg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>   
+    </div>
+</div>
+</div>
     </body>
 
     
